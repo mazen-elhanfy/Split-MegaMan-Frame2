@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    width: 800px;
+    height: 400px;
+    background-color: #000;
+    border: 2px solid #fff;
+    margin: 100px auto;
+    position: relative;
+}
+.parent::after{
+    content: "";
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: -3%;
+        border: 12px solid #000;
+        background-color: #fff;
+        border-right: 0px;
+}
+.parent img{
+    z-index: 5;
+        /* width: 100px; */
+        /* height: 100px; */
+        position: absolute;
+        left: 30%;
+        top: -3%;
+}
